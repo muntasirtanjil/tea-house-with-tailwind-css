@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,18 +14,46 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
 </head>
+
 <body>
-    
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+        <header class="flex pt-10 mb-20">
+            <!-- text section -->
+            <div>
+                <h1 class="text-5xl md:text-7xl">It's good <br> time at The <br> Tea House</h1>
+                <p class="w-3/4 text-gray-500">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="px-5 py-4 rounded-lg text-white bg-gradient-to-r from-[#FF8938] to-[#FF0000] font-bold ">Explore More <i class="fa-solid -rotate-45 fa-arrow-right"></i></button>
+            </div>
+            <!-- img section -->
+            <div class="relative">
+                <img class="w-full" src="images/banner.png" alt="">
+                
+                <div class=" absolute top-28 md:top-80  md:left-32 lg:28 flex items-center bg-white px-7 py-5 rounded-lg shadow-md  ">
+                    
+                    <div>
+                        <i class="fa-solid text-yellow-400 text-2xl fa-star"></i>
+                    </div>
+                    <div >
+                        <h2 class="text-3xl font-bold">5.00</h2>
+                        <p class="text-[#777777] text-base ">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </header>
+    </main>
 </body>
+
 </html>
